@@ -4,24 +4,26 @@ int main()
 {
 	char m = 0;
 	int c;
-	double out,a, b;
-	a = 1; b = 1; c = 0; out = 0;
+	double out,a, b,t;
+	a = 1; b = 1; c = 0; out = 0; t = 0;
 	printf("Enter:");
-	scanf("%d", &c);
+	scanf_s("%d", &c);
 	for (; c != 0; c--)
 	{
 		if (m == 0)
 		{
-			out = +(a / b);
+			out = out+(a / b);
+			t = a;
 			a = b;
-			b = a + b;
+			b = t + b;
 			m = 1;
 		}
 		else if (m == 1)
 		{
-			out = -(a / b);
+			out =out-(a / b);
+			t = a;
 			a = b;
-			b = a + b;
+			b = t + b;
 			m = 0;
 		}
 	}

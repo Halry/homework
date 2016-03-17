@@ -1,19 +1,13 @@
 #include <stdafx.h>
 #include <Math.h>
 #define PI 3.14
-double radius, area;
+double radius, area, long;
 int main()
 {
 	printf("Enter radius:");
 	scanf("%lf", &radius);
-	if (radius < 0)
-	{
-		printf("Are you kidding me?;)");
-	}
-	else
-	{
 		area = pow(radius, 2)*PI;
-		printf("Area is %lf", area);
-	}
+		long=2*PI*radius;
+		printf("Area is %lf,long:%lf", area,long);
 	while (1);
 }

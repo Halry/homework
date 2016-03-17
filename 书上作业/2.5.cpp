@@ -7,7 +7,7 @@ int main()
 	double out,a, b,t;
 	a = 1; b = 1; c = 0; out = 0; t = 0;
 	printf("Enter:");
-	scanf_s("%d", &c);
+	scanf("%d", &c);
 	for (; c != 0; c--)
 	{
 		if (m == 0)
